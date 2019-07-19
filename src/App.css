@@ -1,3 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .App {
   text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.App__table {
+  margin: 50px auto 20px;
+  border-collapse: collapse;
+  text-align: left;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 70%;
+}
+
+th {
+  text-transform: uppercase;
+  color: gray;
+}
+
+th, td {
+  border: 1px solid gainsboro;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.App__form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.App__form input, select {
+  margin-bottom: 10px;
+}
+
+.App__form input, select, button {
+  line-height: 30px;
+  height: 30px;
+  font-size: 13px;
+  padding: 0 10px;
+  border-radius: 3px;
+  border: 1px solid gainsboro;
+}
+
+.App__form button {
+  cursor: pointer;
+  background: transparent;
+}
+
+.App__form button:hover {
+  background: gainsboro;
+}
+
+.App__form span {
+  margin-bottom: 10px;
+  font-size: 12px;
+  margin-top: -8px;
+  align-self: end;
+}
+
+.error {
+  display: block;
+  color: red;
+}
+
+.hide-error {
+  display: none;
 }
